@@ -1,0 +1,156 @@
+.sxema {
+  padding: 38px 0 51px 0;
+  &-info-title {
+    font-family: "Muller";
+    font-size: 30px;
+    color: #7f38bd;
+    font-weight: 700;
+  }
+  &-info-head {
+    font-family: "Muller";
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    margin: 25px 0 35px 0;
+  }
+  &-info-text {
+    font-family: "OpenSans";
+    font-size: 16px;
+    color: #5e606a;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.sxema-photo {
+  min-height: 720px;
+  &-inner {
+    position: relative;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+}
+.sxema-photo-inner-block {
+  font-family: "Muller";
+  font-size: 13px;
+  color: #5e606a;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  z-index: 2;
+  p {
+    margin-top: 6px;
+    max-width: 125px;
+  }
+}
+
+.sxema-photo-inner-block:nth-child(1) {
+  position: absolute;
+  top: 35px;
+  left: 81px;
+}
+.sxema-photo-inner-block:nth-child(2) {
+  position: absolute;
+  top: 230px;
+  right: -5px;
+}
+.sxema-photo-inner-block:nth-child(3) {
+  position: absolute;
+  top: 325px;
+  left: 0;
+}
+.sxema-photo-inner-block:nth-child(4) {
+  position: absolute;
+  top: 565px;
+  left: 80px;
+}
+.sxema-photo-inner-mobline {
+  position: absolute;
+  top: 115px;
+  left: 101px;
+}
+.sxema-photo-inner-tabline {
+  display: none;
+}
+.sxema-photo-inner-desline {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .sxema-info-head{
+    font-size: 32px;
+  }
+  .sxema-photo {
+    min-height: 505px;
+    &-inner {
+      max-width: 720px;
+      margin-top: 75px;
+    }
+  }
+  .sxema-photo-inner-mobline {
+    display: none;
+  }
+  .sxema-photo-inner-tabline {
+    display: block;
+    position: absolute;
+    top: 101px;
+    left: 118px;
+  }
+  .sxema-photo-inner-block:nth-child(1) {
+    position: absolute;
+    top: 45px;
+    left: 167px;
+  }
+  .sxema-photo-inner-block:nth-child(2) {
+    position: absolute;
+    top: 140px;
+    right: 0;
+  }
+  .sxema-photo-inner-block:nth-child(3) {
+    position: absolute;
+    top: 225px;
+    left: 0;
+  }
+  .sxema-photo-inner-block:nth-child(4) {
+    position: absolute;
+    top: 345px;
+    left: 375px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sxema {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 105px 0 133px 0;
+    &-info{
+        width: 450px;
+    }
+  }
+  .sxema-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 180px;
+  }
+
+  .sxema-photo-inner-tabline {
+    display: none;
+  }
+  .sxema-photo-inner-desline {
+    display: block;
+  }
+  .sxema-photo-inner-block:nth-child(1) {
+    top: -52px;
+    left: 72px;
+  }
+  .sxema-photo-inner-block:nth-child(2){
+    top: 70px;
+    right: -91px;
+  }
+  .sxema-photo-inner-block:nth-child(3){
+    top: 111px;
+    left: -97px;
+  }
+  .sxema-photo-inner-block:nth-child(4){
+    top: 267px;
+    left: 112px;
+  }
+}

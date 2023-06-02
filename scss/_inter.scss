@@ -1,0 +1,116 @@
+.inter {
+  padding: 71px 0 251px 0;
+  position: relative;
+  height: 920px;
+}
+.inter-inner-number {
+  font-family: "Muller";
+  font-size: 200px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 180px;
+  text-shadow: 0 0 20px #ece9ec;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: -1;
+}
+.inter-inner-text {
+  p:nth-child(1) {
+    font-family: "Muller";
+    font-size: 24px;
+    color: #000;
+  }
+  p:nth-child(2) {
+    font-family: "OpenSans";
+    font-size: 18px;
+    color: #5e606a;
+    line-height: 24px;
+    margin: 37px 0 43px 0;
+  }
+  a {
+    width: 100%;
+    display: inline-block;
+    padding: 16px 0;
+    background-color: #fb0275;
+    font-family: "OpenSans";
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 30px;
+  }
+}
+.inter-inner-photo {
+  position: absolute;
+  right: 0;
+  bottom: 54px;
+  z-index: -1;
+}
+.inter-inner-photo-1 {
+  max-width: 100%;
+  height: auto;
+}
+.inter-inner-photo-2 {
+  display: none;
+}
+.inter-inner-photo-3 {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .inter-inner-photo {
+    top: 140px;
+  }
+  .inter-inner-text {
+    width: 500px;
+    p:nth-child(1) {
+      font-size: 32px;
+    }
+    a {
+      width: 270px;
+    }
+  }
+  .inter-inner-photo-1 {
+    display: none;
+  }
+  .inter-inner-photo-2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inter {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  .inter-inner {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    &-text {
+      margin-top: 50px;
+    }
+  }
+  .inter-inner-photo-2 {
+    display: none;
+  }
+  .inter-inner-photo-3 {
+    display: block;
+  }
+  .inter-inner-number {
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  .inter-inner-photo {
+    position: absolute;
+    bottom: -465px;
+    left: -95px;
+    z-index: -1;
+  }
+}

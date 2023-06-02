@@ -1,0 +1,134 @@
+.poligraf {
+  background-color: #faf8fb;
+}
+.poligraf-inner {
+  position: relative;
+  padding: 70px 0 60px 0;
+  &-number {
+    font-family: "Muller";
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 180px;
+    text-shadow: 0 0 20px #ece9ec;
+    color: #faf8fb;
+    position: absolute;
+    top: 10px;
+    left: 36px;
+    z-index: 1;
+  }
+}
+.poligraf-inner-info {
+  position: relative;
+  z-index: 2;
+  font-family: "Muller";
+  font-size: 24px;
+  color: #000;
+  p {
+    margin-bottom: 50px;
+  }
+}
+.poligraf-inner-info-text {
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: #5e606a;
+  line-height: 24px;
+  p:nth-child(1) {
+    margin-bottom: 24px;
+  }
+}
+.poligraf-inner-photo {
+  margin-top: 25px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.poligraf-inner-form {
+  p:nth-child(1) {
+    font-family: "OpenSans";
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+    font-weight: 300;
+    line-height: 30.1px;
+  }
+  p:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.poligraf-inner-form-in {
+  flex-basis: 100%;
+  font-style: italic;
+  background-color: transparent;
+  padding: 9px 15px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #9598a3;
+  font-weight: 700;
+}
+.poligraf-inner-form-in:nth-child(2) {
+  margin: 20px 0 34px 0;
+}
+.poligraf-inner-form-sub {
+  flex-basis: 100%;
+  padding: 15px 0;
+  border: none;
+  background-color: #fb0275;
+  border-radius: 30px;
+  font-family: "OpenSans";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+    .poligraf-inner-info{
+        font-size: 32px;
+    }
+  .poligraf-inner-photo {
+    position: absolute;
+    top: 310px;
+    right: -110px;
+    z-index: 1;
+    width: 453px;
+  }
+  .poligraf-inner-form {
+    width: 335px;
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .poligraf{
+        .container{
+            max-width: 1140px;
+        }
+    }
+  .poligraf-inner-info {
+    width: 560px;
+  }
+  .poligraf-inner-photo{
+    width: 100%;
+    top: -30px;
+    left: 590px;
+  }
+  .poligraf-inner-form{
+    form{
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 15px;
+    }
+  }
+  .poligraf-inner-form-sub{
+    padding: 15px 20px;
+  }
+}
